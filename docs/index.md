@@ -8,3 +8,13 @@ This is a small, automatically formatted site run on github pages to allow HomeS
 - [Agatha](https://wil-ro.github.io/HomeSus/Agatha) 
 - [Echeveria](https://wil-ro.github.io/HomeSus/Echeveria) 
 - [Tobi](https://wil-ro.github.io/HomeSus/Tobi) 
+
+### To Do List
+
+- [x] Build the wiki
+- [x] Fill the wiki
+- [] Start making the game
+
+### Contributions
+
+If you want to help us, just make a pull request or [Wil-Ro](https://github.com/Wil-Ro)
