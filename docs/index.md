@@ -5,5 +5,6 @@ This is a small, automatically formatted site run on github pages to allow HomeS
 ### Menu
 
 - [Cyte](https://wil-ro.github.io/HomeSus/Cyte) 
-- [bob](https://wil-ro.github.io/HomeSus/Cyte) 
-- [jim](https://wil-ro.github.io/HomeSus/Cyte) 
+- [Agatha](https://wil-ro.github.io/HomeSus/Agatha) 
+- [Echeveria](https://wil-ro.github.io/HomeSus/Echeveria) 
+- [Tobi](https://wil-ro.github.io/HomeSus/Tobi) 
