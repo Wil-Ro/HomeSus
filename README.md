@@ -1,2 +1,4 @@
 # HomeSus
- Homestuck X Among us dating sim
+A Homestuck X Among Us dating sim created over the course of a summer hollidays because its funny
+
+See the character wiki here:https://wil-ro.github.io/HomeSus/
