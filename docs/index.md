@@ -13,7 +13,10 @@ This is a small site designed to allow HomeSus developers to keep track of its i
 
 - [x] Build the wiki
 - [x] Fill the wiki
-- [] Start making the game
+- [ ] Start making the game
+- [ ] Start work on art assets
+- [X] Start work on music assets
+- [ ] Finish things
 
 ### Contributions
 
