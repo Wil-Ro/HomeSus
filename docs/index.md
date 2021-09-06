@@ -8,6 +8,7 @@ This is a small site designed to allow HomeSus developers to keep track of its i
 - [Agatha](https://wil-ro.github.io/HomeSus/Agatha) 
 - [Echeveria](https://wil-ro.github.io/HomeSus/Echeveria) 
 - [Tobi](https://wil-ro.github.io/HomeSus/Tobi) 
+- [Big Schlongs](https://wil-ro.github.io/HomeSus/BigShclongs)
 
 ### To Do List
 
