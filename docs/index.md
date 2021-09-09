@@ -22,3 +22,4 @@ This is a small site designed to allow HomeSus developers to keep track of its i
 ### Contributions
 
 If you want to help us, just make a pull request or message [Wil-Ro](https://github.com/Wil-Ro)
+You can find some useful notes for development [here](https://wil-ro.github.io/HomeSus/notes)
