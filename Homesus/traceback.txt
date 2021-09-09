@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 27, in script
+    schlong "yoooooo."
+Exception: Sayer 'schlong' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 27, in script
+    schlong "yoooooo."
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ast.py", line 680, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'schlong' is not defined.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.4.1439
+Homesus 1.0
+Wed Sep  8 22:42:09 2021

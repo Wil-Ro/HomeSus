@@ -3,7 +3,16 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define bs = Character("Big Schlong")
+
+transform eject:
+    zoom 0.1
+    parallel:
+        xalign 0 yalign 0.8
+        linear 10.0 xalign 1 yalign 0.2 // this dont work :(
+    parallel:
+        linear 10.0 rotate 360
+
 
 
 # The game starts here.
@@ -14,20 +23,22 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg space
+
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
-
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    "" ""
+    "" "..."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    show schlong cry at eject
 
-    # This ends the game.
+    bs "yo."
+
+    # This ends the game.S
 
     return
