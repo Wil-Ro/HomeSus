@@ -4,14 +4,16 @@
 # name of the character.
 
 define bs = Character("Big Schlong")
+define mc = Character("[name]")
+
 
 transform eject:
     zoom 0.1
     parallel:
-        xalign 0 yalign 0.8
-        linear 10.0 xalign 1 yalign 0.2 // this dont work :(
+        xalign -0.1 yalign 0.8
+        linear 30.0 xalign 1.1 yalign 0.2
     parallel:
-        linear 10.0 rotate 360
+        linear 30.0 rotate 360
 
 
 
@@ -22,8 +24,21 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
+    image deltarune = Movie(play = "deltarune.webm", mask = "deltarune-mask.webm", channel = "deltarunenoise")
 
-    scene bg space
+    show deltarune
+
+
+    python:
+        name = renpy.input("name?", default = "enter name")
+        name = name.strip()
+        if not name or name == "enter name":
+            name = "Red"
+    
+    stop deltarunenoise fadeout 1.0
+    hide deltarune with fade
+    pause 1.0
+    scene bg space with fade
 
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -32,12 +47,18 @@ label start:
 
     # These display lines of dialogue.
 
-    "" ""
+
+    show mc normal at eject
+
     "" "..."
+    "" "[name] has been ejected, 1 impostor remains"
+    mc "..."
+    mc "fuck"
 
-    show schlong cry at eject
+    scene bg school-corridor with fade
 
-    bs "yo."
+    mc "..."
+    mc ".. where am I?"
 
     # This ends the game.S
 

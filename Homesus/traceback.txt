@@ -1,22 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 27, in script
-    schlong "yoooooo."
-Exception: Sayer 'schlong' is not defined.
+  File "game/script.rpy", line 31, in script
+    python:
+  File "game/script.rpy", line 32, in <module>
+    name = renpy.input("Whats your name?", default = "enter name")
+IOError: Couldn't find file 'deltarune.webm'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 27, in script
-    schlong "yoooooo."
-  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'schlong' is not defined.
+  File "game/script.rpy", line 31, in script
+    python:
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 32, in <module>
+    name = renpy.input("Whats your name?", default = "enter name")
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/exports.py", line 913, in input
+    rv = renpy.ui.interact(mouse='prompt', type="input", roll_forward=roll_forward)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/display/core.py", line 3794, in interact_core
+    renpy.audio.audio.periodic()
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/audio/audio.py", line 1101, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/audio/audio.py", line 1079, in periodic_thread_main
+    periodic_pass()
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/audio/audio.py", line 1021, in periodic_pass
+    c.periodic()
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/audio/audio.py", line 487, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "A:\Nye\Documents\Development\Programming\RenPy\renpy-7.4.4-sdk/renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'deltarune.webm'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Homesus 1.0
-Wed Sep  8 22:42:09 2021
+Fri Sep 10 00:06:21 2021

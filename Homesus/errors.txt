@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 6: is not terminated with a newline. (Check strings and parenthesis.)
-    define bs = Character("Big Schlong", color = 
+File "game/script.rpy", line 27: invalid syntax
+    Movie(play = "deltarune.webm", mask = "deltarune-mask.webm" channel = "movie")
+                                                                       ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Wed Sep  8 23:44:19 2021
+Fri Sep 10 00:13:44 2021
